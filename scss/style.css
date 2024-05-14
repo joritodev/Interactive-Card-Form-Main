@@ -35,13 +35,13 @@ body {
 
 .fundo-roxo {
   height: 230px;
-  background: url("/images/bg-main-mobile.png");
+  background-image: url(./images/bg-main-mobile.png);
   background-repeat: no-repeat;
   background-size: 100vw 33.33vh;
 }
 @media (min-width: 1024px) {
   .fundo-roxo {
-    background: url("/images/bg-main-desktop.png");
+    background-image: url(./images/bg-main-desktop.png);
     background-repeat: no-repeat;
     width: 33vw;
     height: 100vh;
