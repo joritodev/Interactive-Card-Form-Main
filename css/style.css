@@ -23,7 +23,7 @@ body {
   background-color: var(--background-color);
   overflow-x: hidden;
 
-  background-image: url(/images/bg-main-desktop.png);
+  background-image: url(./images/bg-main-desktop.png);
   background-size: 33,5% 100vh;
   background-repeat: no-repeat;
   position: absolute;
@@ -44,7 +44,7 @@ main {
     gap: 2.5rem;
 
     .front-card {
-      background-image: url(/images/bg-card-front.png);
+      background-image: url(./images/bg-card-front.png);
       background-size: 400px 200px;
       width: 400px;
       height: 200px;
@@ -61,14 +61,10 @@ main {
           width: 80px;
         }
       }
-
-      .text-front-card {
-        
-      }
     }
 
     .back-card {
-      background-image: url(/images/bg-card-back.png);
+      background-image: url(./images/bg-card-back.png);
       background-size: 400px 200px;
       width: 400px;
       height: 200px;
