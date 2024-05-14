@@ -10,4 +10,68 @@
   --font-primary: "Space Grotesk", sans-serif;
   --linear-gradient: linear-gradient(27deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+
+  background-image: url(/images/bg-main-desktop.png);
+  background-size: 33,5% 100vh;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    .front-card {
+      background-image: url(/images/bg-card-front.png);
+      background-size: 400px 200px;
+      width: 400px;
+      height: 200px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .image {
+        width: 350px;
+
+        img {
+          width: 80px;
+        }
+      }
+
+      .text-front-card {
+        
+      }
+    }
+
+    .back-card {
+      background-image: url(/images/bg-card-back.png);
+      background-size: 400px 200px;
+      width: 400px;
+      height: 200px;
+    }
+  }
+}
