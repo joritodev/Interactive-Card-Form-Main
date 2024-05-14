@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+:root {
+  --background-color: hsl(0, 0%, 100%);
+  --color-input-error: hsl(0, 100%, 66%);
+  --input-color: hsl(270, 3%, 87%);
+  --color-placeholder: hsl(279, 6%, 55%);
+  --button-h1-color: hsl(278, 68%, 11%);
+  --font-size-geral: 18px;
+  --font-primary: "Space Grotesk", sans-serif;
+  --linear-gradient: linear-gradient(27deg, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: var(--font-primary);
+  font-size: 18px;
+}
+@media (min-width: 1024px) {
+  html,
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.fundo-roxo {
+  height: 230px;
+  background: url("/images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 33.33vh;
+}
+@media (min-width: 1024px) {
+  .fundo-roxo {
+    background: url("/images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    width: 33vw;
+    height: 100vh;
+    background-size: 30vw 100vh;
+  }
+}
+
+nav {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+@media (min-width: 1024px) {
+  nav {
+    position: absolute;
+    top: 50%;
+    margin: auto 0;
+    width: 50vw;
+    height: 100vh;
+  }
+}
+nav .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+@media (min-width: 1024px) {
+  nav .card {
+    height: 100vh;
+    z-index: 2;
+  }
+}
+nav .card img {
+  width: 250px;
+}
+@media (min-width: 1024px) {
+  nav .card img {
+    width: 400px;
+  }
+}
+nav .card .card-backside {
+  position: absolute;
+  padding-left: 50px;
+  top: 40px;
+}
+@media (min-width: 1024px) {
+  nav .card .card-backside {
+    top: 250px;
+    margin-left: 150px;
+  }
+}
+nav .card .card-logo {
+  position: absolute;
+  top: 135px;
+  z-index: 3;
+  width: 40px;
+  padding-right: 233px;
+}
+@media (min-width: 1024px) {
+  nav .card .card-logo {
+    margin-left: 20px;
+    top: 30px;
+    width: 64px;
+  }
+}
+nav .card .card-frontside {
+  position: absolute;
+  padding-right: 50px;
+  top: 117.7px;
+}
+@media (min-width: 1024px) {
+  nav .card .card-frontside {
+    margin-left: 100px;
+    top: 0px;
+  }
+}
+nav .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  padding-left: 220px;
+}
+@media screen {
+  nav .back {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+nav .back span {
+  position: absolute;
+  top: 101px;
+  color: var(--background-color);
+  font-size: 10px;
+}
+@media (min-width: 1024px) {
+  nav .back span {
+    font-size: 17px;
+    padding-left: 180px;
+    padding-top: 247px;
+  }
+}
+nav .front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  padding-right: 53px;
+}
+@media (min-width: 1024px) {
+  nav .front {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+  }
+}
+nav .front .dados {
+  position: absolute;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 195px;
+}
+@media (min-width: 1024px) {
+  nav .front .dados {
+    position: absolute;
+    z-index: 3;
+    top: 130px;
+  }
+}
+nav .front .dados h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--background-color);
+}
+@media (min-width: 1024px) {
+  nav .front .dados h1 {
+    font-size: 32px;
+    position: relative;
+  }
+}
+nav .front .dados div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav .front .dados div span {
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media (min-width: 1024px) {
+  nav .front .dados div span {
+    font-size: 15px;
+  }
+}
+
+main {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vw;
+}
+@media (min-width: 1024px) {
+  main {
+    margin-left: 300px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 60px;
+  width: 300px;
+  height: 250px;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  main .container {
+    height: 300px;
+  }
+}
+main .container input {
+  padding-left: 10px;
+  outline: 1;
+}
+main .container input::-moz-placeholder {
+  font-family: var(--font-primary);
+  color: var(--color-placeholder);
+}
+main .container input::placeholder {
+  font-family: var(--font-primary);
+  color: var(--color-placeholder);
+}
+main .container h1 {
+  color: var(--button-h1-color);
+  letter-spacing: 1px;
+}
+main .container .input-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+  width: 300px;
+}
+main .container .input-name input {
+  height: 25px;
+  border: 2px solid var(--input-color);
+  border-radius: 4px;
+}
+main .container .input-number-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+  width: 300px;
+}
+main .container .input-number-card input {
+  height: 25px;
+  border: 2px solid var(--input-color);
+  border-radius: 4px;
+}
+main .container .input-date-cvc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  height: 50px;
+}
+main .container .input-date-cvc .date-cvc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 210px;
+}
+main .container .input-date-cvc .input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
+main .container .input-date-cvc .input div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 160px;
+}
+main .container .input-date-cvc .input div input {
+  height: 25px;
+  width: 60px;
+  border: 2px solid var(--input-color);
+  border-radius: 4px;
+}
+main .container .input-date-cvc .input .cvc {
+  width: 120px;
+  border: 2px solid var(--input-color);
+  border-radius: 4px;
+}
+main .container .confirm {
+  width: 300px;
+  height: 45px;
+  background-color: var(--button-h1-color);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-geral);
+  color: var(--background-color);
+  border: none;
+  border-radius: 6px;
+}/*# sourceMappingURL=style.css.map */
